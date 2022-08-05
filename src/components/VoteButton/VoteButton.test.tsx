@@ -1,5 +1,4 @@
 import React from 'react';
-import {Image} from 'react-native';
 import {act, render, fireEvent} from '@testing-library/react-native';
 
 import VoteButton from './VoteButton';
