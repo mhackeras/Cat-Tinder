@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VoteButton renders a vote button with heart icon 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": 100,
+      "elevation": 16,
+      "height": 54,
+      "justifyContent": "center",
+      "opacity": 1,
+      "shadowColor": "rgba(191, 191, 192, 0.3)",
+      "shadowOffset": Object {
+        "height": 10,
+        "width": 0,
+      },
+      "shadowOpacity": 1,
+      "width": 54,
+    }
+  }
+  testID="vote-button"
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../src/res/pngs/vote/heart.png",
+      }
+    }
+    style={
+      Object {
+        "height": 32,
+        "width": 32,
+      }
+    }
+  />
+</View>
+`;

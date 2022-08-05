@@ -16,7 +16,7 @@ const VoteButton = ({variant, onPress, customStyle}: Props) => {
   const finalStyle = Object.assign({}, styles.container, customStyle);
 
   return (
-    <TouchableOpacity style={finalStyle} onPress={onPress}>
+    <TouchableOpacity testID="vote-button" style={finalStyle} onPress={onPress}>
       <Image source={icon} style={styles.image} />
     </TouchableOpacity>
   );
