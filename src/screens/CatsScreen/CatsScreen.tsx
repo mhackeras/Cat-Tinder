@@ -63,14 +63,15 @@ const CatsScreen = () => {
         {catsList && (
           <Swiper
             ref={swiper}
-            containerStyle={{height: '100%'}}
-            cardStyle={{height: '80%'}}
+            containerStyle={styles.swiper}
+            cardStyle={styles.swiperCard}
             cards={catsList}
             renderCard={(card: CatImage) =>
               card && <CatCard key={card.id} card={card} />
             }
             cardIndex={0}
             stackSize={2}
+            stackSeparation={0}
             goBackToPreviousCardOnSwipeLeft={false}
             verticalSwipe={false}
             onSwipedLeft={voteX}
