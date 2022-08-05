@@ -10,3 +10,5 @@ Also api was some how complicated so I didn't achieve to fetch cat's info.
 Now it's just displaying the id. 
 
 Using image endpoint just returned info for the image. Probably needed to use the image_id to fetch the extra info but ran out of time mostly.
+
+Also one more thing I would do, is use redux or any state management.
