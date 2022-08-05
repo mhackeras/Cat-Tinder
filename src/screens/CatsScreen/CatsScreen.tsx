@@ -12,23 +12,23 @@ const CatsScreen = () => {
   const swiper = useRef<Swiper<CatImage>>(null);
   const [currentSwiperIndex, setCurrentSwiperIndex] = useState(0);
   const [catsList, setCatsList] = useState<CatImage[]>();
-  let listPage = 0;
+  const [listPage, setListPage] = useState(0);
 
   const fetchCatsData = useCallback(() => {
     fetchCats(listPage).then((response: CatImage[]) => {
-      listPage = listPage + 1;
+      setListPage(l => l + 1);
       setCatsList(response);
     });
   }, []);
 
   useEffect(() => {
     fetchCatsData();
-  }, []);
+  }, [fetchCatsData]);
 
   const loadMoreCats = () => {
     fetchCats(listPage).then((response: CatImage[]) => {
       if (response.length > 0) {
-        listPage = listPage + 1;
+        setListPage(l => l + 1);
         const newCatsList = catsList?.concat(response);
         setCatsList(newCatsList);
       }

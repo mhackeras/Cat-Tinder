@@ -27,17 +27,7 @@ const CatCard = ({card}: Props) => {
         onLoadEnd={handleLoadEnd}
       />
       {isLoading && (
-        <ActivityIndicator
-          style={{
-            position: 'absolute',
-            top: 0,
-            right: 0,
-            left: 0,
-            bottom: 0,
-            alignItems: 'center',
-          }}
-          size={'large'}
-        />
+        <ActivityIndicator style={styles.loadingIndicator} size={'large'} />
       )}
       {!isLoading && (
         <View style={styles.info}>

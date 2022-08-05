@@ -1,6 +1,6 @@
 import React from 'react';
-import {View, ViewStyle} from 'react-native';
-import {Edge, SafeAreaView} from 'react-native-safe-area-context';
+import {View} from 'react-native';
+import {SafeAreaView} from 'react-native-safe-area-context';
 import styles from './Screen.style';
 
 interface Props {

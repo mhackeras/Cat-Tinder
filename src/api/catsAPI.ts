@@ -10,7 +10,7 @@ export const fetchCats = async (page: number) => {
 
 export const catVote = async (imageId: string, vote: number) => {
   axios.defaults.headers.common['x-api-key'] = catsApiKey;
-  const res = await axios.post(`https://api.thecatapi.com/v1/votes`, {
+  const res = await axios.post('https://api.thecatapi.com/v1/votes', {
     image_id: imageId,
     value: vote,
   });
